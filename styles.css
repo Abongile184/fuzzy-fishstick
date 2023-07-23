@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: 'Times New Roman', serif;
+}
+
+h1, h2, h3{
+    font-family: ;
+}
+
+/* Navigation bar section*/
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(255, 117, 160,0.7);
+  padding: 5px;
+}
+
+ul.topnav li {float: right;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* this is the horizontal line hovering effect on the navigation  */ 
+hr {
+    width: 80%;
+    border: 0;
+    height: 1px;
+    margin-top: 0px;
+    background-color: #000;
+}
+
+.topnav li a {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+    overflow: hidden;
+    top: 5px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.topnav li a:after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 2px;
+    width: 0%;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 0;
+    transition: .35s ease;
+}
+
+.topnav a:hover:after {
+    width: 60%;
+}
+
+
+
+/* website changes to a mobile friendly view */
+@media screen and (max-width: 700px) {
+	ul.topnav li.right,
+	ul.topnav li {float: none;
+  }
+
+  #main-image {
+    width: 100%;
+    padding-top: 4px;
+  }
+
+}
+
+
+/*Main Content Section */
+
+#section-paragraph{
+  color: #8f8f8f;
+  font-size: 120%;
+}
+
+/*background -image */
+#main-image {
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+   }
+
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 30%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+ 
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:700px) {
+  .column{
+    width: 100%;
+    text-align: center;
+  }
+}
+
+#heading-content {
+  color: #3DB2FF;
+  margin-left: 12px;
+}
+
+/*coloring the icons*/
+.fa-2x {
+  color: tomato;
+  padding: auto;
+  margin: auto;
+}
